@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 120px;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+button {
+    background-color: #4CAF50; /* Modern green */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: all 0.7s ease-in-out;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+}
+
+#result span {
+    color: #4CAF50;
+    font-size: 24px;
+}

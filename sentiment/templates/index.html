@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-time Emotion Classifier with Emojis</h1>
+        <textarea id="comment" placeholder="Type your comment here..."></textarea>
+        <button onclick="analyzeComment()">Analyze</button>
+        <div id="result">
+            <p>Emotion: <span id="emotion">-</span></p>
+            <p>Emoji: <span id="emoji">-</span></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
